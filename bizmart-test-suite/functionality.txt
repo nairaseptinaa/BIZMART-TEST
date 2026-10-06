@@ -1,0 +1,13 @@
+tests/test_functionality.py::test_NFR017_corrupt_storage_handled FAILED  [ 16%]
+tests/test_functionality.py::test_NFR018_cart_total_correct PASSED       [ 33%]
+tests/test_functionality.py::test_NFR018_checkout_creates_order_and_clears_cart PASSED [ 50%]
+tests/test_functionality.py::test_NFR019_stock_never_negative FAILED     [ 66%]
+tests/test_functionality.py::test_NFR020_user_cancel_restores_stock PASSED [ 83%]
+tests/test_functionality.py::test_NFR020_admin_cancel_restores_stock FAILED [100%]
+E   AssertionError: Skrip berhenti saat load: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+/home/claude/testing/tests/test_functionality.py:13: AssertionError: Skrip berhenti saat load: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+E   AssertionError: Stok akhir -2
+/home/claude/testing/tests/test_functionality.py:37: AssertionError: Stok akhir -2
+E   AssertionError: Stok tidak kembali saat admin membatalkan
+/home/claude/testing/tests/test_functionality.py:49: AssertionError: Stok tidak kembali saat admin membatalkan
+========================= 3 failed, 3 passed in 2.17s ==========================

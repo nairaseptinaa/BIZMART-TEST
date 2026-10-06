@@ -1,0 +1,16 @@
+tests/test_maintainability.py::test_NFR005_js_separated_into_modules FAILED [ 20%]
+tests/test_maintainability.py::test_NFR006_no_duplicate_date_formatting FAILED [ 40%]
+tests/test_maintainability.py::test_NFR006_no_duplicate_initials_logic FAILED [ 60%]
+tests/test_maintainability.py::test_NFR007_data_separated_from_logic FAILED [ 80%]
+tests/test_maintainability.py::test_NFR008_status_list_single_source FAILED [100%]
+E   AssertionError: Hanya 0 berkas JS; seluruh logika di satu file HTML
+/home/claude/testing/tests/test_maintainability.py:8: AssertionError: Hanya 0 berkas JS; seluruh logika di satu file HTML
+E   AssertionError: Format tanggal diduplikasi 3x
+/home/claude/testing/tests/test_maintainability.py:13: AssertionError: Format tanggal diduplikasi 3x
+E   AssertionError: Pembuatan inisial nama diduplikasi 3x
+/home/claude/testing/tests/test_maintainability.py:18: AssertionError: Pembuatan inisial nama diduplikasi 3x
+E   AssertionError: 15 state global 'let' bercampur dengan logika
+/home/claude/testing/tests/test_maintainability.py:23: AssertionError: 15 state global 'let' bercampur dengan logika
+E   AssertionError: Daftar status pesanan didefinisikan di 2 tempat
+/home/claude/testing/tests/test_maintainability.py:28: AssertionError: Daftar status pesanan didefinisikan di 2 tempat
+============================== 5 failed in 0.02s ===============================

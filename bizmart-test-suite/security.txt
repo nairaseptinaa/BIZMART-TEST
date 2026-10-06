@@ -1,0 +1,19 @@
+tests/test_security.py::test_NFR001_no_hardcoded_credentials FAILED      [ 16%]
+tests/test_security.py::test_NFR002_password_is_hashed FAILED            [ 33%]
+tests/test_security.py::test_NFR003_xss_not_executed_on_admin_page FAILED [ 50%]
+tests/test_security.py::test_NFR003_eslint_no_unsanitized_innerhtml FAILED [ 66%]
+tests/test_security.py::test_NFR004_role_authorization_deleteProduct FAILED [ 83%]
+tests/test_security.py::test_NFR004_review_requires_order_ownership FAILED [100%]
+E   AssertionError: Password literal ditemukan di DEMO_USERS
+/home/claude/testing/tests/test_security.py:8: AssertionError: Password literal ditemukan di DEMO_USERS
+E   AssertionError: Password tersimpan plaintext di localStorage
+/home/claude/testing/tests/test_security.py:18: AssertionError: Password tersimpan plaintext di localStorage
+E   AssertionError: Payload XSS dieksekusi di halaman admin
+/home/claude/testing/tests/test_security.py:32: AssertionError: Payload XSS dieksekusi di halaman admin
+E   AssertionError: assert 15 == 0
+/home/claude/testing/tests/test_security.py:36: AssertionError: assert 15 == 0
+E   AssertionError: User biasa berhasil menghapus produk lewat konsol
+/home/claude/testing/tests/test_security.py:43: AssertionError: User biasa berhasil menghapus produk lewat konsol
+E   AssertionError: Ulasan diterima tanpa cek kepemilikan pesanan
+/home/claude/testing/tests/test_security.py:52: AssertionError: Ulasan diterima tanpa cek kepemilikan pesanan
+============================== 6 failed in 3.06s ===============================

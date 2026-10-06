@@ -1,0 +1,12 @@
+tests/test_testing.py::test_NFR029_sut_has_automated_tests FAILED        [ 25%]
+tests/test_testing.py::test_NFR030_logic_testable_without_dom FAILED     [ 50%]
+tests/test_testing.py::test_NFR031_negative_boundary_product_rejected FAILED [ 75%]
+tests/test_testing.py::test_NFR032_e2e_flow_automatable PASSED           [100%]
+E   AssertionError: Tidak ada berkas test di repositori SUT
+/home/claude/testing/tests/test_testing.py:9: AssertionError: Tidak ada berkas test di repositori SUT
+E   AssertionError: Logika tidak dapat dimuat tanpa DOM/localStorage
+     +  where 1 = CompletedProcess(args=['node', '-e', "require('vm').runInNewContext(require('fs').readFileSync('/tmp/pytest-of-root/pytest-9/test_NFR030_logic_testable_wit0/app.js','utf8'),{})"], returncode=1, stdout='', stderr="evalmachine.<anonymous>:19\nlet users = JSON.parse(localStorage.getItem('bm_users') || JSON.stringify(DEMO_USERS));\n                       ^\n\nReferenceError: localStorage is not defined\n    at evalmachine.<anonymous>:19:24\n    at Script.runInContext (node:vm:149:12)\n    at Script.runInNewContext (node:vm:154:17)\n    at Object.runInNewContext (node:vm:310:38)\n    at [eval]:1:15\n    at runScriptInThisContext (node:internal/vm:209:10)\n    at node:internal/process/execution:446:12\n    at [eval]-wrapper:6:24\n    at runScriptInContext (node:internal/process/execution:444:60)\n    at evalFunction (node:internal/process/execution:279:30)\n\nNode.js v22.22.2\n").returncode
+/home/claude/testing/tests/test_testing.py:17: AssertionError: Logika tidak dapat dimuat tanpa DOM/localStorage
+E   AssertionError: Produk dengan harga/stok negatif diterima
+/home/claude/testing/tests/test_testing.py:28: AssertionError: Produk dengan harga/stok negatif diterima
+========================= 3 failed, 1 passed in 1.33s ==========================

@@ -1,0 +1,9 @@
+tests/test_performance.py::test_NFR013_filter_algorithm_scales PASSED    [ 25%]
+tests/test_performance.py::test_NFR014_no_unneeded_rerender FAILED       [ 50%]
+tests/test_performance.py::test_NFR015_savedata_writes_only_changed_key FAILED [ 75%]
+tests/test_performance.py::test_NFR016_no_heavy_dependencies PASSED      [100%]
+E   AssertionError: Seluruh grid dirender ulang (kartu yang tidak berubah ikut diganti)
+/home/claude/testing/tests/test_performance.py:18: AssertionError: Seluruh grid dirender ulang (kartu yang tidak berubah ikut diganti)
+E   AssertionError: saveData() menulis 5 key localStorage untuk 1 perubahan
+/home/claude/testing/tests/test_performance.py:25: AssertionError: saveData() menulis 5 key localStorage untuk 1 perubahan
+========================= 2 failed, 2 passed in 1.62s ==========================

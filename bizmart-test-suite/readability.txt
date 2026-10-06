@@ -1,0 +1,9 @@
+tests/test_readability.py::test_NFR009_names_are_camelCase_and_descriptive PASSED [ 25%]
+tests/test_readability.py::test_NFR010_indentation_consistent PASSED     [ 50%]
+tests/test_readability.py::test_NFR011_no_scattered_magic_strings FAILED [ 75%]
+tests/test_readability.py::test_NFR012_functions_max_40_lines FAILED     [100%]
+E   AssertionError: 11 perbandingan status memakai string literal langsung
+/home/claude/testing/tests/test_readability.py:19: AssertionError: 11 perbandingan status memakai string literal langsung
+E   AssertionError: 3 fungsi melebihi 40 baris
+/home/claude/testing/tests/test_readability.py:23: AssertionError: 3 fungsi melebihi 40 baris
+========================= 2 failed, 2 passed in 0.93s ==========================

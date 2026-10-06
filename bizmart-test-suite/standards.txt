@@ -1,0 +1,16 @@
+tests/test_standards.py::test_NFR025_prefer_const FAILED                 [ 16%]
+tests/test_standards.py::test_NFR025_strict_equality PASSED              [ 33%]
+tests/test_standards.py::test_NFR026_html_valid_htmlhint PASSED          [ 50%]
+tests/test_standards.py::test_NFR027_labels_have_for_attribute FAILED    [ 66%]
+tests/test_standards.py::test_NFR027_aria_attributes_present FAILED      [ 83%]
+tests/test_standards.py::test_NFR028_no_blocking_dialog FAILED           [100%]
+E   AssertionError: assert 2 == 0
+/home/claude/testing/tests/test_standards.py:6: AssertionError: assert 2 == 0
+E   AssertionError: 17 dari 17 label tanpa atribut for
+/home/claude/testing/tests/test_standards.py:20: AssertionError: 17 dari 17 label tanpa atribut for
+E   AssertionError: Tidak ada atribut aria-*
+/home/claude/testing/tests/test_standards.py:24: AssertionError: Tidak ada atribut aria-*
+E   AssertionError: assert 3 == 0
+/home/claude/testing/tests/test_standards.py:28: AssertionError: assert 3 == 0
+FAILED tests/test_standards.py::test_NFR025_prefer_const - AssertionError: as...
+========================= 4 failed, 2 passed in 1.36s ==========================
